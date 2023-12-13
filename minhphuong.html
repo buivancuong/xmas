@@ -80,7 +80,7 @@
 
         if (count < text.length - 1) {
           count++;
-          setTimeout('writetext()', 0);
+          setTimeout('writetext()', 31);
         }
         else { //if this string is written, get the new string
           count = 0;
@@ -89,7 +89,7 @@
             count2++;
             text2 += "<p>"; //a new line
             text = eval('msg[' + count2 + '].split("")'); //get the new string to text
-            setTimeout('writetext()', 15);
+            setTimeout('writetext()', 65);
           }
         }
       }
