@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html><head>
+
+<title>*****  Merry Christmas Haley  *****</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="MSHTML 6.00.2900.2180" name="GENERATOR"></head><body onload="writetext()" bgcolor="#000000" text="#167715">
+<center>
+<table width="80%">
+<tbody>
+    <audio src="https://cdn.pixabay.com/audio/2023/11/28/audio_0259eeea2e.mp3"></audio>
+<button id="button">
+    <i class="fas fa-volume-up"></i>
+  1 chút nhạc chứ nàng?
+</button>
+<tr> 
+<td>
+<p>
+
+<table align="center" cellpadding="10">
+<tbody>
+<tr bgcolor="black">
+<br>
+</tr></tbody></table></td></tr></tbody></table>
+
+<style type="text/css"> {
+PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10pt; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 10px; PADDING-TOP: 0px; FONT-FAMILY: Lucida Console, Courier, Monotype; TEXT-ALIGN: center
+}
+</style>
+
+<p></p>
+
+
+<script language="JavaScript">
+msg = new Array(); //strings written in screen
+msg[0] = "<font face='Courier' color='#00FAFA'>cuongbv</font>@<font face='Courier' color='#ff0000'>linux</font>:~$ cat xmas.msg"
+msg[1] = "<h2><font face='Courier'><center>---==[Gửi em, Minh Phương]==---</center></h2>";
+msg[2] = "<b> I wish you a Merry Christmas";
+msg[3] = "<b> Quay ngang màn hình để thấy cây thông noel nhé! </b>";
+msg[4] = "<b> < Message : <font face='Courier' ='#00FAFA'>Thích anh đưa đi đâu chơi Noel thì nhắn lại fb anh nhé!</font>";
+msg[5] = "<b> <font face='Courier' ='#00FAFA'>Cafe (with your kitty), trà sữa nướng, thẩm đồ ăn, ... </font>";
+msg[6] = "<b> <font face='Courier' ='#00FAFA'>Bảo tàng, tô tượng, nặn gốm, dạo phố, vòng hồ Tây, ... </font>";
+msg[7] = "<b> <font face='Courier' ='#00FAFA'>Bất cứ thứ gì để anh luôn thấy nụ cười trên môi em!</font>";
+msg[8] = "<b> Anh : <font face='Courier' color='#00FAFA'> Cường </font>";
+
+
+
+text1 = ""; //the same as text2, only the last character is highlighted
+text2 = ""; //current string, which will be written
+count = 0; //char index in string text
+count2 = 0; //number of strings
+
+text = msg[0].split(""); //text - string written
+
+function writetext() { //show strings above on screen
+text1 = text2 + "<font color='#00FAFA'>" + text[count] + "</font>";
+text2 += text[count];
+document.all["nothing"].innerHTML = text1; //where to write
+
+if (count < text.length-1){
+count++;
+setTimeout('writetext()', 0);
+}
+else { //if this string is written, get the new string
+count = 0;
+
+if (count2 != 8) { //write 4 strings
+count2++;
+text2 += "<p>"; //a new line
+text = eval('msg['+count2+'].split("")'); //get the new string to text
+setTimeout('writetext()', 15);
+}
+}
+}
+//const URL = 'https://cdn.pixabay.com/audio/2023/11/28/audio_0259eeea2e.mp3';
+
+const button = document.querySelector("#button");
+const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
+
+
+
+</script>
+
+
+
+<!-- CSS Fragment -->
+<style>
+
+body {
+  background: url(https://wallpapers.com/images/hd/black-christmas-tree-sz2ae3jv2mbh14az.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  margin: 0;
+}
+
+audio {
+  display: none;
+}
+
+button {
+  font-size: 16px;
+  color: #0ef;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  padding: 15px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: rgba(115, 67, 167, 0.8);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+button.fade:hover {
+  opacity: 0.5;
+}
+
+.fade {
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+ 
+.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:2s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+</style>
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+</div>
+
+<div id="nothing" style="font-family: 'Courier';"><h2><font face="Courier"><center></center></font></h2><p><font face="Courier"><b><font color="#00FFFF" face="Courier"> </font></b></font></p><p><font face="Courier"><b><b>
+</center></body></html>
