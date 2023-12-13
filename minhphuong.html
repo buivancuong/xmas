@@ -24,7 +24,7 @@
             <table align="center" cellpadding="10">
               <tbody>
                 <tr bgcolor="black">
-                  <br><br><br><br><br><br><br><br>
+                  <!-- <br><br><br><br><br><br><br><br> -->
                 </tr>
               </tbody>
             </table>
@@ -57,10 +57,12 @@
       msg[2] = "<font color='#00FAFA'>print</font>( ' I wish you a Merry Christmas ' )<br><br><br>";
       msg[3] = "<img src='xmastree.png'>         <img src='xmastree.png'>         <img src='xmastree.png'><br><br><br>";
       msg[4] = "<font color='#00FAFA'>if</font> you have free time and wanna hangout <br><br>";
-      msg[5] = "<font color='#00FAFA'>select</font> ( ' cafe (with ur kitty), grilled bubbletea, new food tasting, museums, painting, pottery, or just strolling around enjoy being alive. You name it. ' ) <br><br>";
-      msg[6] = "<font color='#00FAFA'>then</font> contact my fb, so I can bring it. <br><br>";
-      msg[7] = "<font color='#00FAFA'>os.system</font> ( echo ' Anh : <font color='#ff0000'> Cường </font> ' )<br><br><br><br><br><br>";
-      msg[8] = "<font color='#00FAFA'># in the meantime, this is a button for Christmas music</font>";
+      msg[5] = "<font color='#00FAFA'>select</font> ( ' cafe (with ur kitty), grilled bubbletea,";
+      msg[6] = "new food tasting, museums, painting, pottery";
+      msg[7] = "or just strolling around enjoy being alive. You name it. ' ) <br><br>";
+      msg[8] = "<font color='#00FAFA'>then</font> contact my fb, so I can bring it. <br><br>";
+      msg[9] = "<font color='#00FAFA'>os.system</font> ( echo ' Anh : <font color='#ff0000'> Cường </font> ' )<br><br><br><br><br><br>";
+      msg[10] = "<font color='#FFD7B0'># in the meantime, this is a button for Christmas music </font>";
 
 
 
@@ -72,7 +74,7 @@
       text = msg[0].split(""); //text - string written
 
       function writetext() { //show strings above on screen
-        text1 = text2 + "<font color='#00FFF00'>" + text[count] + "</font>";
+        text1 = text2 + text[count];
         text2 += text[count];
         document.all["nothing"].innerHTML = text1; //where to write
 
@@ -83,7 +85,7 @@
         else { //if this string is written, get the new string
           count = 0;
 
-          if (count2 != 8) { //write 4 strings
+          if (count2 != 10) { //write 4 strings
             count2++;
             text2 += "<p>"; //a new line
             text = eval('msg[' + count2 + '].split("")'); //get the new string to text
@@ -145,7 +147,7 @@
         font-size: 16px;
         color: rgb(255, 255, 255);
         position: absolute;
-        top: 65%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 200px;
@@ -362,7 +364,7 @@
       </div>
     </div>
 
-    <div id="nothing" style="padding-left: 20%; padding-right: 20%;">
+    <div id="nothing" style="padding-left: 20%; padding-right: 20%; padding-top: 20%;">
 </body>
 
 </html>
