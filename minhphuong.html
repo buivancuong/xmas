@@ -13,6 +13,7 @@
     <table width="80%">
       <tbody>
         <audio src="https://cdn.pixabay.com/audio/2023/11/28/audio_0259eeea2e.mp3"></audio>
+        <div id="nothing" style="padding-left: 15%; padding-right: 15%; padding-top: 20%;"></div>
         <button id="button">
           <i class="fas fa-volume-up"></i>
           THE MUSIC BUTTON
@@ -80,7 +81,7 @@
 
         if (count < text.length - 1) {
           count++;
-          setTimeout('writetext()', 31);
+          setTimeout('writetext()', 20);
         }
         else { //if this string is written, get the new string
           count = 0;
@@ -89,7 +90,7 @@
             count2++;
             text2 += "<p>"; //a new line
             text = eval('msg[' + count2 + '].split("")'); //get the new string to text
-            setTimeout('writetext()', 65);
+            setTimeout('writetext()', 40);
           }
         }
       }
@@ -147,7 +148,7 @@
         font-size: 16px;
         color: rgb(255, 255, 255);
         position: absolute;
-        top: 70%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 200px;
@@ -364,7 +365,7 @@
       </div>
     </div>
 
-    <div id="nothing" style="padding-left: 15%; padding-right: 15%; padding-top: 20%;">
+    <!-- <div id="nothing" style="padding-left: 15%; padding-right: 15%; padding-top: 20%;"> -->
 </body>
 
 </html>
